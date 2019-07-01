@@ -38,13 +38,13 @@ int quick_select(int A[], int n, int k){
         
     int b = n-1;
     for(int i = 0; i < a; i++){
-        if(A[i] ==pivot)continue:
+        if(A[i] ==pivot)continue;
             while(1){
                 if(A[i] == pivot){
-        swap(A+i,A+t);
+        swap(A+i,A+b);
                     break;
                 }
-                t--;
+                b--;
             }
     }
                     
@@ -60,7 +60,7 @@ int main(){
   A[1] = 17; //原始元
   for(i=2;i<N;i++){
     A[i] = (long long int) A[i-1] * A[1] % N;
-      A[i] =17
+      A[i] =17;
   }
 
 // すべての要素が同じ場合でも計算が早く終わるか確認する
